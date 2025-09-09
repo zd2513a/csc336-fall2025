@@ -2,45 +2,199 @@
     <head>
         <title>What is FPS Game</title>
         <link rel="icon" href="game.png">
+        <style>
+            html{
+                font-size: large;
+            }
+
+            header {
+                background-color: pink;
+                padding: 1rem;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+            }
+
+            .nav {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+            .nav a:hover {
+                color: yellow;
+            }
+
+            body{
+                background: linear-gradient(to bottom, pink, white);
+                margin: 0;
+                padding-top: 70px;
+            }
+
+            p{
+                color: black;
+            }
+
+            h1{
+                width: 30%;
+                background-color: pink;
+                border-radius: 10px;
+                text-align: center;
+                color: darkred;
+                margin: 1rem auto;
+            }
+
+            h2{
+                color: brown;
+            }
+
+            .part1{
+                background-color: rgb(253, 255, 255);
+                padding: 1rem
+            }
+
+            .box{
+                width: 80%;
+                border: 2px solid pink;
+                border-radius: 15px;
+                padding: 2rem;
+                margin: 1rem auto;
+            }
+
+            .box2 ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .box2 li{
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                padding: 0.5rem;
+                margin-bottom: 0.5rem;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                transition: transform 0.2s;
+            }
+
+            .box2 li:hover{
+                transform: scale(1.02);
+                border-color: gray;
+            }
+
+            .box2{
+                width: 80%;
+                padding: 1rem;
+                margin: 1rem auto;}
+            
+
+            #game{
+                display: flex;
+                width: 80%;
+                gap: 1rem;
+                list-style: none;
+                padding: 1rem;
+                margin: 1rem auto;
+            }
+
+            #game li{
+                flex: 1;
+                padding: 1rem;
+                border-radius: 8px;
+                text-align: center;
+                transition: transform .2s ease;
+            }
+
+            #game li p{
+                text-align: justify;
+            }
+
+            #game li:hover{
+                transform: scale(1.2);
+                border: 2px solid white;
+            }
+
+
+        </style>
     </head>
     <body>
 
-        <h1>What is FPS Game</h1>
+    <header>
+        <nav>
+            <ul class="nav">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#example">Example</a></li>
+            <li><a href="#origin">Origin</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h2>Introduction</h2>
+        <section class="part1">
+            <h1>What is FPS Game</h1>
 
-        <p><strong>First-person shooters</strong> are a type of shooter game that relies on a first-person point of view with which the player experiences the action through the eyes of the character. They differ from third-person shooters in that, in a third-person shooter, the player can see the character they are controlling (usually from behind, or above). The primary design focus is combat, mainly involving firearms or other types of long range weapons.</p>
+            <div id="intro" class = "box">
+                <h2>Introduction</h2>
+                <p><strong>First-person shooters</strong> are a type of shooter game that relies on a first-person point of view with which the player experiences the action through the eyes of the character. They differ from third-person shooters in that, in a third-person shooter, the player can see the character they are controlling (usually from behind, or above). The primary design focus is combat, mainly involving firearms or other types of long range weapons.</p>
+            </div>    
+        </section>
+        <div id="example" class = "box2">
+            <h2>Example</h2>
+            <ol id="game">
+                <li>
+                    <h3>CS:GO (Counter-Strike: Global Offensive)</h3>
+                    <img src="CSGO.png" alt="game image" width="200" height="250">
+                    <p>Developed by <a href="https://en.wikipedia.org/wiki/Hidden_Path_Entertainment"><i>Valve and Hidden Path Entertainment</i></a>, CS:GO is the fourth entry in the classic Counter-Strike series. The game emphasizes team-based tactical shooting, where players are divided into Terrorists and Counter-Terrorists competing in objectives such as bomb planting/defusal or hostage rescue. With its realistic gunplay and high competitiveness, CS:GO has become one of the world’s most popular esports titles.</p>
+                </li>
 
-        <h2>Example:</h2>
+                <li>
+                    <h3>Valorant</h3>
+                    <img src="valorant.png" alt="game image" width="200" height="250">
+                    <p>Created by <a href="https://en.wikipedia.org/wiki/Riot_Games"><i>Riot Games</i></a>, Valorant combines tactical shooting with unique character abilities. In its 5v5 matches, players choose “agents,” each with distinct skills and playstyles, blending precise gunplay with strategic ability usage. The game focuses heavily on teamwork and strategy, and it has quickly risen as a major force in the esports scene.</p>
+                </li>
 
-        <ol>
-            <li>
-                <h3 style="color: rgb(255, 166, 0);">CS:GO (Counter-Strike: Global Offensive)</h3>
-                <img src="CSGO.png" alt="game image" width="200">
-                <p style="color: rgb(255, 166, 0);">Developed by <a href="https://en.wikipedia.org/wiki/Hidden_Path_Entertainment"><i>Valve and Hidden Path Entertainment</i></a>, CS:GO is the fourth entry in the classic Counter-Strike series. The game emphasizes team-based tactical shooting, where players are divided into Terrorists and Counter-Terrorists competing in objectives such as bomb planting/defusal or hostage rescue. With its realistic gunplay and high competitiveness, CS:GO has become one of the world’s most popular esports titles.</p>
-            </li>
+                <li>
+                    <h3>Delta Force</h3>
+                    <img src="delta force.png" alt="game image" width="200" height="250">
+                    <p>Delta Force, formerly Delta Force: Hawk Ops, is a free-to-play first-person tactical shooter video game developed and published by <a href="https://en.wikipedia.org/wiki/TiMi_Studio_Group"><i>TiMi Studio Group</i></a> and Garena respectively for Windows PC, iOS and Android devices, while the home consoles launch arrived on August 2025. It is part of the computer FPS Delta Force series, previously developed and published by NovaLogic. </p>
+                </li>
+            </ol>
+        </div>
 
-            <li>
-                 <h3 style="color: rgb(255, 0, 0);">Valorant</h3>
-                <img src="valorant.png" alt="game image" width="200">
-                <p style="color: rgb(255, 0, 0);">Created by <a href="https://en.wikipedia.org/wiki/Riot_Games"><i>Riot Games</i></a>, Valorant combines tactical shooting with unique character abilities. In its 5v5 matches, players choose “agents,” each with distinct skills and playstyles, blending precise gunplay with strategic ability usage. The game focuses heavily on teamwork and strategy, and it has quickly risen as a major force in the esports scene.</p>
-            </li>
+        <section class="part1">
+        <div id="origin" class = "box">
+            <h2>Origin</h2>
 
-            <li>
-                 <h3 style="color: rgb(0, 255, 0);">Delta Force</h3>
-                <img src="delta force.png" alt="game image" width="200">
-                <p style="color: rgb(0, 255, 0);">Delta Force, formerly Delta Force: Hawk Ops, is a free-to-play first-person tactical shooter video game developed and published by <a href="https://en.wikipedia.org/wiki/TiMi_Studio_Group"><i>TiMi Studio Group</i></a> and Garena respectively for Windows PC, iOS and Android devices, while the home consoles launch arrived on August 2025. It is part of the computer FPS Delta Force series, previously developed and published by NovaLogic. </p>
-            </li>
-        </ol>
-        
-        <h2>Origin</h2>
+            <p>
+                The First-Person Shooter (FPS) genre originated in the 1970s with experimental games like Maze War and Spasim, which introduced the concept of navigating a 3D environment and shooting from a first-person perspective. However, it wasn’t until the early 1990s that FPS became mainstream, largely thanks to id Software’s Wolfenstein 3D (1992), which set the template for the genre, and Doom (1993), which revolutionized it with improved graphics, fast-paced action, and multiplayer gameplay. These innovations paved the way for later classics such as Quake, and ultimately shaped modern shooters like CS:GO, Call of Duty, and Valorant.
+            </p>
+            <p>What to know other type of action game we have? <a href="game type.html">click here</a></p>
+        </div>
+        </section>
 
-        <p>
-            The First-Person Shooter (FPS) genre originated in the 1970s with experimental games like Maze War and Spasim, which introduced the concept of navigating a 3D environment and shooting from a first-person perspective. However, it wasn’t until the early 1990s that FPS became mainstream, largely thanks to id Software’s Wolfenstein 3D (1992), which set the template for the genre, and Doom (1993), which revolutionized it with improved graphics, fast-paced action, and multiplayer gameplay. These innovations paved the way for later classics such as Quake, and ultimately shaped modern shooters like CS:GO, Call of Duty, and Valorant.
-        </p>
-
-        <p>What to know other type of action game we have? <a href="game type.html">click here</a></p>
-
+        <div class="box2">  
+            <h2>What other type of action game we have?</h2>  
+            <ul>
+                <li>First-Person Shooter (FPS) - e.g., Doom, CS:GO, Valorant</li>
+                <li>Third-Person Shooter - e.g., Gears of War, Fortnite</li>
+                <li>Platformer - e.g., Super Mario, Celeste</li>
+                <li>Fighting - e.g., Street Fighter, Tekken, Mortal Kombat</li>
+                <li>Beat 'em up / Brawler - e.g., Double Dragon, Streets of Rage</li>
+                <li>Stealth - e.g., Metal Gear Solid, Hitman</li>
+                <li>Survival - e.g., Rust, Don't Starve</li>
+                <li>Battle Royale - e.g., PUBG, Apex Legends</li>
+            </ul>
+        </div>
     </body>
 </html>
 
