@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Enter') handleAddCard();
   });
 
+  makeCard('Event', 'User or system action that scripts can respond to.');
+
   setTimeout(() => {
     hint.style.color = 'blue';
     hint.style.fontWeight = '700';
