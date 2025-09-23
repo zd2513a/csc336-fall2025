@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Enter') handleAddCard();
   });
 
-  makeCard('Event', 'User or system action that scripts can respond to.');
+  makeCard('Boy', 'A male child.');
 
   setTimeout(() => {
     hint.style.color = 'blue';
