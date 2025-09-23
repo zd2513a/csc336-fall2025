@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Flashcard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Flashcard</h1>
+    <section id="controls" class="panel">
+      <p>
+        Term:
+        <input id="term-input" type="text" placeholder="e.g., Boy" />
+      </p>
+      <p>
+        Definition:
+        <input id="def-input" type="text" placeholder="e.g., A male child" />
+      </p>
+      <button id="add-btn">Add Card</button>
+      <button id="theme-btn">Toggle Theme</button>
+      <p id="hint" class="hint">Tip: Click a card to flip it.</p>
+    </section>
+
+    <section id="cards" class="cards-grid" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

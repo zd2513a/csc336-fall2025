@@ -1,0 +1,112 @@
+body.light {
+  background: #fafafa;
+  color: #222;
+}
+
+body.light .panel {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+body.light .card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #222;
+}
+
+body.dark {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+body.dark .panel {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+}
+
+body.dark .card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  color: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.panel {
+  border-radius: 12px;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f3f4f6;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(0.98);
+}
+
+.hint {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.cards-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  border-radius: 14px;
+  padding: 14px;
+  min-height: 120px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  user-select: none;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+.card .term {
+  font-weight: 800;
+  font-size: 20px;
+}
+.card .def {
+  font-size: 15px;
+  line-height: 1.4;
+  color: inherit;
+}
