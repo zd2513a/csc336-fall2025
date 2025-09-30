@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(198, 255, 236);
+}
+
+.task {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.task .meta {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.task button {
+  margin-top: 6px;
+  padding: 4px 8px;
+  border: none;
+  background: #d9534f;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.task button:hover {
+  background: #c9302c;
+}
