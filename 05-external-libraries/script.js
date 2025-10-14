@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }).showToast();
 
   const btn = document.getElementById("dealBtn");
-  const synth = new Tone.Synth().toDestination();
+  const synth = new Tone.MembraneSynth().toDestination();
 
   btn.addEventListener("click", () => {
     synth.triggerAttackRelease("A3", "16n");
