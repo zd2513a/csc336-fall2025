@@ -1,0 +1,88 @@
+{
+  "regions": [
+    {
+      "name": "Novice Village",
+      "climate": "Temperate",
+      "towns": [
+        {
+          "name": "Origin village",
+          "population": 5000,
+          "notable_people": [
+            {
+              "name": "The Elder",
+              "role": "Novice guide",
+              "items": [
+                {
+                  "name": "Beginner's Guide",
+                  "rarity": "Common",
+                  "element": "Paper"
+                }
+              ]
+            },
+            {
+              "name": "The Iron Man",
+              "role": "Blacksmith",
+              "items": [
+                {
+                  "name": "Excellent Iron Sword",
+                  "rarity": "Rare",
+                  "element": "Iron"
+                },
+                {
+                  "name": "Iron Armor",
+                  "rarity": "Common",
+                  "element": "Iron"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "City",
+      "climate": "Continental",
+      "towns": [
+        {
+          "name": "Royal Capital",
+          "population": 20000,
+          "notable_people": [
+            {
+              "name": "Louis Dan",
+              "role": "King",
+              "items": [
+                {
+                  "name": "King's Crown",
+                  "rarity": "Mythic",
+                  "element": "Gold"
+                },
+                {
+                  "name": "King's Scepter",
+                  "rarity": "Mythic",
+                  "element": "Gold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "North city",
+          "population": 15000,
+          "notable_people": [
+            {
+              "name": "Smith War",
+              "role": "Sergeant Major",
+              "items": [
+                {
+                  "name": "Sharp sword",
+                  "rarity": "epic",
+                  "element": "steel"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
