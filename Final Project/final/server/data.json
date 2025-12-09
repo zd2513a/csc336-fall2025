@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Simple Tomato Pasta",
+    "description": "A quick and easy pasta dish with tomato sauce.",
+    "ingredients": "pasta, tomato sauce, garlic, olive oil, salt, pepper",
+    "steps": "1. Boil pasta in salted water.\n2. Heat olive oil and garlic.\n3. Add tomato sauce and simmer.\n4. Mix pasta with sauce and serve.",
+    "cookingTime": 20,
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "title": "Garlic Butter Shrimp",
+    "description": "Pan-fried shrimp with garlic butter sauce.",
+    "ingredients": "shrimp, butter, garlic, lemon, salt, pepper",
+    "steps": "1. Melt butter in pan.\n2. Add garlic and cook until fragrant.\n3. Add shrimp and cook until pink.\n4. Squeeze lemon on top and serve.",
+    "cookingTime": 15,
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "title": "test",
+    "description": "",
+    "ingredients": "test",
+    "steps": "test",
+    "cookingTime": 12,
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "title": "new",
+    "description": "",
+    "ingredients": "new",
+    "steps": "new",
+    "cookingTime": 2,
+    "difficulty": "easy"
+  }
+]
