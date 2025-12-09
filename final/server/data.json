@@ -25,14 +25,5 @@
     "steps": "test",
     "cookingTime": 12,
     "difficulty": "easy"
-  },
-  {
-    "id": 4,
-    "title": "new",
-    "description": "",
-    "ingredients": "new",
-    "steps": "new",
-    "cookingTime": 2,
-    "difficulty": "easy"
   }
 ]

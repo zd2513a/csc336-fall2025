@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { API_BASE_URL } from "../api";
+import { toast } from "react-toastify";
 
 export default function RecipeList() {
   const [recipes, setRecipes] = useState([]);
@@ -49,11 +50,42 @@ export default function RecipeList() {
     setFlippedId((prev) => (prev === id ? null : id));
   }
 
+  async function handleDelete(e, id) {
+    e.stopPropagation();
+
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this recipe?"
+    );
+    if (!confirmDelete) return;
+
+    try {
+      const res = await fetch(`${API_BASE_URL}/api/recipes/${id}`, {
+        method: "DELETE",
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        const msg = data.error || `Failed to delete (status ${res.status})`;
+        throw new Error(msg);
+      }
+
+      setRecipes((prev) => prev.filter((recipe) => recipe.id !== id));
+      if (flippedId === id) {
+        setFlippedId(null);
+      }
+
+      toast.success("Recipe deleted.");
+    } catch (err) {
+      console.error("Error deleting recipe:", err);
+      toast.error(err.message || "Failed to delete recipe.");
+    }
+  }
+
   return (
     <section>
       <h1 className="page-title">All Recipes</h1>
       <p className="page-subtitle">
-        Click a card to see ingredients and steps.
+        Click a card to see ingredients and steps. Use delete to remove a recipe.
       </p>
 
       {recipes.length === 0 ? (
@@ -126,7 +158,9 @@ export default function RecipeList() {
                           ))}
                       </ul>
                     ) : (
-                      <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>
+                      <p
+                        style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}
+                      >
                         No ingredients provided.
                       </p>
                     )}
@@ -144,19 +178,39 @@ export default function RecipeList() {
                         {recipe.steps}
                       </p>
                     ) : (
-                      <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>
+                      <p
+                        style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}
+                      >
                         No steps provided.
                       </p>
                     )}
 
-                    <p
+                    {/* Delete button */}
+                    <button
+                      onClick={(e) => handleDelete(e, recipe.id)}
                       style={{
                         marginTop: "12px",
+                        alignSelf: "flex-end",
+                        padding: "6px 10px",
+                        borderRadius: "999px",
+                        border: "none",
+                        fontSize: "0.8rem",
+                        cursor: "pointer",
+                        background: "#fee2e2",
+                        color: "#b91c1c",
+                      }}
+                    >
+                      Delete
+                    </button>
+
+                    <p
+                      style={{
+                        marginTop: "6px",
                         fontSize: "0.8rem",
                         color: "var(--text-muted)",
                       }}
                     >
-                      Click again to flip back ↑
+                      Click empty area to flip back ↑
                     </p>
                   </div>
                 </div>
