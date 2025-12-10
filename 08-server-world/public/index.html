@@ -1,23 +1,26 @@
+<!DOCTYPE html>
 <html>
+
   <head>
-    <title>Interactive Server World</title>
-    <script src="./script.js" defer></script>
+    <title>Server World</title>
   </head>
 
   <body>
-    <h1>Interactive Server World</h1>
-    <p>
-      You can add a region for your json world.
-    </p>
+    <h1>My World</h1>
 
-    <div id="worldDiv"></div>
+    <button id="load">Load World</button>
+    <pre id="output"></pre>
 
-    <h2>Add a region</h2>
-    <form id="nameForm">
-      <label for="name">region name:</label>
-      <input type="text" region="region">
-      <input type="text" climate="climate">
-      <button type="submit">Add Excitement</button>
+    <h2>Add Person</h2>
+    <form id="form">
+      <input name="regionName" placeholder="Region" required />
+      <input name="townName" placeholder="Town" required />
+      <input name="personName" placeholder="Name" required />
+      <input name="personRole" placeholder="Role" required />
+      <button>Add</button>
     </form>
+
+    <script src="script.js"></script>
   </body>
+
 </html>

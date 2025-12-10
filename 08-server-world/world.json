@@ -62,6 +62,11 @@
                   "element": "Gold"
                 }
               ]
+            },
+            {
+              "name": "Tim",
+              "role": "Normal people",
+              "items": []
             }
           ]
         },
